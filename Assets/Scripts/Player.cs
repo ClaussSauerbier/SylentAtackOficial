@@ -87,15 +87,15 @@ public class Player : MonoBehaviour
         {
             morto = false;
             vida = 100;
-            estrelaAmmo = 0;
+            estrelaAmmo = 3;
             granadaAmmo = 0;
             transform.position = posCheck;
-            vidasText.text = "" + vidasTotal;
             podeMover = true;
             mortoParaInimigo = false;
             estrelaText.text = "" + estrelaAmmo;
             granadaText.text = "" + granadaAmmo;
             vidasText.text = "" + vidasTotal;
+            vidaTxt.text = "" + vida;
             estaComCartao = false;
             estaComChave = false;
             Instantiate(fx, transform.position, transform.rotation);
