@@ -28,6 +28,9 @@ public class Player : MonoBehaviour
     public GameObject estrela, granada, sangue;
     public Transform estrelaPOS;
 
+    AudioSource tocador;
+    public AudioClip coletaItemSOM, coletaVidaSOM, checkPointSOM, explodeSOM, pulaSOM, granadaSOM, fumaçaSOM, estrelaSOM;
+
     void Start()
     {
         MenuSCR.pauseStatic = false;
@@ -44,6 +47,7 @@ public class Player : MonoBehaviour
         estaComChave = false;
         posCheck = transform.position;
         transform.position = posCheck;
+        tocador = GetComponent<AudioSource>();
     }
     private void Update()
     {

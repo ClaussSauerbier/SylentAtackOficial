@@ -9,6 +9,7 @@ public class Informa : MonoBehaviour
     [TextArea]
     public string info = "";
 
+
     // Start is called before the first frame update
     void Start()
     {

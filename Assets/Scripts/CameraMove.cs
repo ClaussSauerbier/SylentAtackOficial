@@ -8,10 +8,12 @@ public class CameraMove : MonoBehaviour
 
     public float distanciaX, distanciaY, velocidadeX, velocidadeY;
     public bool Delay = false;
+    
 
     void Start()
     {
         posInicial = transform.position;
+        
     }
 
     // Update is called once per frame
