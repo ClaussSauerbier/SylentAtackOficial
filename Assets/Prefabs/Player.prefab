@@ -190,6 +190,15 @@ MonoBehaviour:
   granada: {fileID: 2489957606532433646, guid: f803e44566427e244b8cfaf441d005a1, type: 3}
   sangue: {fileID: 8870241888577544872, guid: db6c2e91c3902384a831b7c3b73f5d4b, type: 3}
   estrelaPOS: {fileID: 8184832193632893369}
+  ItemSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
+  SaudeSOM: {fileID: 8300000, guid: d63e69a1286a6e84dbd03b50e54469fb, type: 3}
+  VidaSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
+  checkPointSOM: {fileID: 8300000, guid: d63e69a1286a6e84dbd03b50e54469fb, type: 3}
+  explodeSOM: {fileID: 8300000, guid: effdf6a0ff3e4414f8f66abc8806829a, type: 3}
+  pulaSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
+  granadaSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
+  "fuma\xE7aSOM": {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
+  estrelaSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
 --- !u!114 &-3139176377418481030
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class Aquario : MonoBehaviour
     {
         if (podeAction)
         { 
+            GetComponent<AudioSource>().Play();
             animador.SetTrigger("Quebra");
             GetComponent<BoxCollider2D>().enabled = false;
             Instantiate(itemVida, transform.position, transform.rotation);

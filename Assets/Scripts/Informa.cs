@@ -8,6 +8,7 @@ public class Informa : MonoBehaviour
     [Header("Digite a informação")]
     [TextArea]
     public string info = "";
+    public AudioClip som;
 
 
     // Start is called before the first frame update
@@ -20,8 +21,9 @@ public class Informa : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            GetComponent<AudioSource>().PlayOneShot(som);
             collision.transform.GetComponent<InfoSCR>().Tutorial(info);
-            Destroy(gameObject);
+            Destroy(gameObject, 0.1f);
         }
     }
 

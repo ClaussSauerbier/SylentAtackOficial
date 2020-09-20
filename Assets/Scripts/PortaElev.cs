@@ -31,6 +31,7 @@ public class PortaElev : MonoBehaviour
             {
                 if (Player.estaComCartao)
                 {
+                    GetComponent<AudioSource>().Play();
                     podeAction = true;
                     collision.GetComponent<InfoSCR>().MudaTexto("Entrar");
                     animador.SetBool("PortaAbre", true);
@@ -47,6 +48,7 @@ public class PortaElev : MonoBehaviour
                 {
                     podeAction = true;
                     collision.GetComponent<InfoSCR>().MudaTexto("Abrir");  
+                    
                 } 
                 else
                 {
@@ -63,6 +65,7 @@ public class PortaElev : MonoBehaviour
             podeAction = false;
             if (usarCard)
             {
+                 GetComponent<AudioSource>().Play();
                 animador.SetBool("PortaAbre", false);
             }
         }
@@ -77,6 +80,7 @@ public class PortaElev : MonoBehaviour
         {
             animador.SetBool("PortaAbre", true);
             GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<AudioSource>().Play();
 
             Collider2D collider = Physics2D.OverlapCircle(transform.position, raio, layer);
             if (collider.transform.GetComponent<Refem>())

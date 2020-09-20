@@ -121,6 +121,7 @@ MonoBehaviour:
   ammo: 0
   granada: 1
   vida: 0
+  vidasTotal: 0
   numeroMunicao: 1
   fx: {fileID: 3576398030030362391, guid: 47319ddc120570041ba21355cbc06dc4, type: 3}
 --- !u!58 &2448787295464308571

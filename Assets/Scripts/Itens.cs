@@ -20,18 +20,21 @@ public class Itens : MonoBehaviour
         {
             if (cartao)
             {
+                Player.itemSTC = true;
                 Player.estaComCartao = true;
                 Instantiate(fx, transform.position, transform.rotation);
                 Destroy(gameObject); 
             }
             if (chave)
             {
+                Player.itemSTC = true;
                 Player.estaComChave = true;
                 Instantiate(fx, transform.position, transform.rotation);
                 Destroy(gameObject);
             }
             if (ammo)
             {
+                Player.itemSTC = true;
                 Player.estrelaAmmo += numeroMunicao;
                 collision.transform.GetComponent<Player>().estrelaText.text = "" + Player.estrelaAmmo;
                 Instantiate(fx, transform.position, transform.rotation);
@@ -39,6 +42,7 @@ public class Itens : MonoBehaviour
             }
             if (granada)
             {
+                Player.itemSTC = true;
                 Player.granadaAmmo += numeroMunicao;
                 collision.transform.GetComponent<Player>().granadaText.text = "" + Player.granadaAmmo;
                 Instantiate(fx, transform.position, transform.rotation);
@@ -46,6 +50,7 @@ public class Itens : MonoBehaviour
             }
             if (vidasTotal)
             {
+                Player.vidaSTC = true;
                 Player.vidasTotal += numeroMunicao;
                 collision.transform.GetComponent<Player>().vidasText.text = "" + Player.vidasTotal;
                 Instantiate(fx, transform.position, transform.rotation);
@@ -55,6 +60,7 @@ public class Itens : MonoBehaviour
             {
                 if (Player.vida < 100)
                 {
+                    Player.saudeSTC = true;
                     Player.vida += numeroMunicao;
                     if (Player.vida > 100)
                     {

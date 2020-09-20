@@ -4334,7 +4334,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bate1_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ab0ca8eb394fe354cb1da75bbee31308, type: 3}
 --- !u!1001 &1656566658
 PrefabInstance:

@@ -19,6 +19,7 @@ public class CaixaEnergia : MonoBehaviour
     {
         if (podeAction)
         {
+            Player.explodeSTC = true;
             Instantiate(explosao, transform.position, transform.rotation);
             GetComponent<Animator>().SetTrigger("Explode");
             GetComponent<BoxCollider2D>().enabled = false;

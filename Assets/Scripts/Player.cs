@@ -29,7 +29,8 @@ public class Player : MonoBehaviour
     public Transform estrelaPOS;
 
     AudioSource tocador;
-    public AudioClip coletaItemSOM, coletaVidaSOM, checkPointSOM, explodeSOM, pulaSOM, granadaSOM, fumaçaSOM, estrelaSOM;
+    public AudioClip ItemSOM, SaudeSOM, VidaSOM, checkPointSOM, explodeSOM, pulaSOM, granadaSOM, fumaçaSOM, estrelaSOM;
+    public static bool itemSTC, vidaSTC, saudeSTC, checkSTC, explodeSTC;
 
     void Start()
     {
@@ -56,6 +57,30 @@ public class Player : MonoBehaviour
             ControlesKeyUpdate();
             AnimacaoUpdate();
             CameraMove();
+            SomExterno();
+        }
+        
+    }
+    void SomExterno(){
+        if(itemSTC){
+            itemSTC = false;
+            tocador.PlayOneShot(ItemSOM);
+        }
+        if(saudeSTC){
+            saudeSTC = false;
+            tocador.PlayOneShot(SaudeSOM);
+        }
+        if(checkSTC){
+            checkSTC = false;
+            tocador.PlayOneShot(checkPointSOM);
+        }
+        if(explodeSTC){
+            explodeSTC = false;
+            tocador.PlayOneShot(explodeSOM);
+        }
+        if(vidaSTC){
+            vidaSTC = false;
+            tocador.PlayOneShot(VidaSOM);
         }
         
     }

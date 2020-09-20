@@ -16,6 +16,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Player.checkSTC = true;
             Player.posCheck = collision.transform.position;
             Instantiate(fx, transform.position, transform.rotation);
             Destroy(gameObject);
