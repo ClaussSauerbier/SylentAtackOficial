@@ -97,4 +97,8 @@ public class MenuSCR : MonoBehaviour
     {
         SceneManager.LoadScene("Fase7");
     }
+    public void Fase8()
+    {
+        SceneManager.LoadScene("Fase8");
+    }
 }

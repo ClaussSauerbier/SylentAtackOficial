@@ -71,15 +71,7 @@ public class PortaElev : MonoBehaviour
     {
         if (podeAction && usarCard && Player.estaComCartao)
         {
-            if(level == "8")
-            {
-                SceneManager.LoadScene("Menu");
-            }
-            else
-            {
-                SceneManager.LoadScene("Fase" + level);
-            }
-            
+            SceneManager.LoadScene("Fase" + level);
         }
         if(podeAction && usarChave && Player.estaComChave)
         {
