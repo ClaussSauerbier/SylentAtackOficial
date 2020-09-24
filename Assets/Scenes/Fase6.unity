@@ -785,7 +785,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &145801217
 PrefabInstance:
@@ -3238,6 +3238,11 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2081690411}
+    - target: {fileID: 2177872772042753229, guid: 34fd2e1966f45594a8820c7fc442df9f,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d2729dbe86ae5f4da5a37b403d01a20, type: 3}
     - target: {fileID: 4285267232712378266, guid: 34fd2e1966f45594a8820c7fc442df9f,
         type: 3}
       propertyPath: m_Name
@@ -3286,7 +3291,7 @@ PrefabInstance:
     - target: {fileID: 4285267232712378270, guid: 34fd2e1966f45594a8820c7fc442df9f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 4285267232712378270, guid: 34fd2e1966f45594a8820c7fc442df9f,
         type: 3}
@@ -4798,7 +4803,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1362688480
 PrefabInstance:

@@ -20,14 +20,14 @@ public class Itens : MonoBehaviour
         {
             if (cartao)
             {
-                Player.itemSTC = true;
+                Player.cardSTC = true;
                 Player.estaComCartao = true;
                 Instantiate(fx, transform.position, transform.rotation);
                 Destroy(gameObject); 
             }
             if (chave)
             {
-                Player.itemSTC = true;
+                Player.keySTC = true;
                 Player.estaComChave = true;
                 Instantiate(fx, transform.position, transform.rotation);
                 Destroy(gameObject);

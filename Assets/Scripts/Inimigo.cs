@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    public bool fumaca;
+    AudioSource som;
+    public AudioClip grito;
+    public bool robo;
     public GameObject fumacaFX;
     Animator animador;
     private bool morto = false;
@@ -24,6 +26,7 @@ public class Inimigo : MonoBehaviour
         inimigoAvistado = false;
         pos = transform.position;
         animador = GetComponent<Animator>();
+        som = GetComponent<AudioSource>();
     }
 
 
@@ -56,10 +59,11 @@ public class Inimigo : MonoBehaviour
     }
     IEnumerator Morrer()
     {
-        if (fumaca)
+        if (robo)
         {
             Instantiate(fumacaFX, transform.position, transform.rotation);
         }
+        som.PlayOneShot(grito, 0.4f);
         morto = true;
         animador.SetBool("Fire", false);
         animador.SetBool("Run", false);

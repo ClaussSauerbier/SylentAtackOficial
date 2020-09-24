@@ -1506,7 +1506,7 @@ PrefabInstance:
     - target: {fileID: 8184832193277854268, guid: 1441ae9774833824daa7a8f18299b66c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.22
+      value: -15.18
       objectReference: {fileID: 0}
     - target: {fileID: 8184832193277854268, guid: 1441ae9774833824daa7a8f18299b66c,
         type: 3}
@@ -3357,6 +3357,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 133502205}
     m_Modifications:
+    - target: {fileID: -1969574286527742406, guid: a5fd242cb5ab0c247896a44050557dce,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 271af48207e4c974a84ffd52a556f63f, type: 3}
     - target: {fileID: 1481555965886997558, guid: a5fd242cb5ab0c247896a44050557dce,
         type: 3}
       propertyPath: m_SortingOrder

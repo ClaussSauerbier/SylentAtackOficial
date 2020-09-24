@@ -65,8 +65,10 @@ public class PortaElev : MonoBehaviour
             podeAction = false;
             if (usarCard)
             {
-                 GetComponent<AudioSource>().Play();
                 animador.SetBool("PortaAbre", false);
+                if(Player.estaComCartao){
+                    GetComponent<AudioSource>().Play();
+                }
             }
         }
     }

@@ -171,7 +171,7 @@ MonoBehaviour:
   estrelaText: {fileID: 0}
   granadaText: {fileID: 0}
   vidasText: {fileID: 0}
-  velocidade: 5
+  velocidade: 6
   forcaPulo: 15
   raioPulo: 2.5
   raioSurdina: 2
@@ -190,15 +190,15 @@ MonoBehaviour:
   granada: {fileID: 2489957606532433646, guid: f803e44566427e244b8cfaf441d005a1, type: 3}
   sangue: {fileID: 8870241888577544872, guid: db6c2e91c3902384a831b7c3b73f5d4b, type: 3}
   estrelaPOS: {fileID: 8184832193632893369}
-  ItemSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
-  SaudeSOM: {fileID: 8300000, guid: d63e69a1286a6e84dbd03b50e54469fb, type: 3}
-  VidaSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
-  checkPointSOM: {fileID: 8300000, guid: d63e69a1286a6e84dbd03b50e54469fb, type: 3}
+  ItemSOM: {fileID: 8300000, guid: 4762ab98c3d5d084e82d82ab45b8fdab, type: 3}
+  SaudeSOM: {fileID: 8300000, guid: 4762ab98c3d5d084e82d82ab45b8fdab, type: 3}
+  VidaSOM: {fileID: 8300000, guid: 127339fba7ee6e7488e643122dba31e3, type: 3}
+  checkPointSOM: {fileID: 8300000, guid: 53183ded64891874c88124f933f803d6, type: 3}
   explodeSOM: {fileID: 8300000, guid: effdf6a0ff3e4414f8f66abc8806829a, type: 3}
-  pulaSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
-  granadaSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
-  "fuma\xE7aSOM": {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
-  estrelaSOM: {fileID: 8300000, guid: 11374401a249cb84db1e290ae4d0048e, type: 3}
+  pulaSOM: {fileID: 8300000, guid: eb3182f2ff6e74c4a915b3d40b3856a5, type: 3}
+  mortoSOM: {fileID: 8300000, guid: c78c70750b9f15948a1783acf0c4f215, type: 3}
+  cardSom: {fileID: 8300000, guid: 1fe096d8a0c9adf489eb749c0cb58724, type: 3}
+  keySom: {fileID: 8300000, guid: 02cfd3693597987429b7855d8b9a2415, type: 3}
 --- !u!114 &-3139176377418481030
 MonoBehaviour:
   m_ObjectHideFlags: 0

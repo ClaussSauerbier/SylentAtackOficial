@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
     public Transform estrelaPOS;
 
     AudioSource tocador;
-    public AudioClip ItemSOM, SaudeSOM, VidaSOM, checkPointSOM, explodeSOM, pulaSOM, granadaSOM, fumaçaSOM, estrelaSOM;
-    public static bool itemSTC, vidaSTC, saudeSTC, checkSTC, explodeSTC;
+    public AudioClip ItemSOM, SaudeSOM, VidaSOM, checkPointSOM, explodeSOM, pulaSOM, mortoSOM, cardSom, keySom;
+    public static bool itemSTC, vidaSTC, saudeSTC, checkSTC, explodeSTC, cardSTC, keySTC;
 
     void Start()
     {
@@ -74,13 +74,17 @@ public class Player : MonoBehaviour
             checkSTC = false;
             tocador.PlayOneShot(checkPointSOM);
         }
-        if(explodeSTC){
-            explodeSTC = false;
-            tocador.PlayOneShot(explodeSOM);
-        }
         if(vidaSTC){
             vidaSTC = false;
             tocador.PlayOneShot(VidaSOM);
+        }
+        if(cardSTC){
+            cardSTC = false;
+            tocador.PlayOneShot(cardSom);
+        }
+        if(keySTC){
+            keySTC = false;
+            tocador.PlayOneShot(keySom);
         }
         
     }
@@ -98,6 +102,7 @@ public class Player : MonoBehaviour
             morto = true;
             mortoParaInimigo = true;
             vidasTotal -= 1;
+            tocador.PlayOneShot(mortoSOM);
             StartCoroutine("MortoCor");
         } 
     }
@@ -125,8 +130,6 @@ public class Player : MonoBehaviour
             granadaText.text = "" + granadaAmmo;
             vidasText.text = "" + vidasTotal;
             vidaTxt.text = "" + vida;
-            estaComCartao = false;
-            estaComChave = false;
             Instantiate(fx, transform.position, transform.rotation);
         }
         
@@ -219,6 +222,7 @@ public class Player : MonoBehaviour
         if (Physics2D.Raycast(transform.position, -transform.up, raioPulo, plataformaLayer ) && !morto)
         {
             rb.AddForce(new Vector2(0, forcaPulo) , ForceMode2D.Impulse); 
+            tocador.PlayOneShot(pulaSOM);
         } 
     }
     private void OnTriggerStay2D(Collider2D collision)
