@@ -8,8 +8,9 @@ public class MenuSCR : MonoBehaviour
     [Header("MENU Pause")]
     public bool game;
     private bool isPause;
-    public static bool pauseStatic;
+    public static bool pauseStatic, fase1_Open, fase2_Open, fase3_Open, fase4_Open, fase5_Open, fase6_Open, fase7_Open;
     public GameObject painel;
+
 
     // Start is called before the first frame update
     void Start()
@@ -71,31 +72,52 @@ public class MenuSCR : MonoBehaviour
     }
     public void Fase1()
     {
+        if(fase1_Open){
         SceneManager.LoadScene("Fase1");
+        }
+        
     }
     public void Fase2()
     {
-        SceneManager.LoadScene("Fase2");
+        if(fase2_Open){
+            SceneManager.LoadScene("Fase2");
+        }
+        
     }
     public void Fase3()
     {
-        SceneManager.LoadScene("Fase3");
+        if(fase3_Open){
+            SceneManager.LoadScene("Fase3");
+        }
+        
     }
     public void Fase4()
     {
-        SceneManager.LoadScene("Fase4");
+        if(fase4_Open){
+            SceneManager.LoadScene("Fase4");
+        }
+        
     }
     public void Fase5()
     {
-        SceneManager.LoadScene("Fase5");
+        if(fase5_Open){
+            SceneManager.LoadScene("Fase5");
+        }
+        
     }
     public void Fase6()
     {
-        SceneManager.LoadScene("Fase6");
+        if(fase6_Open){
+            SceneManager.LoadScene("Fase6");
+        }
+        
     }
     public void Fase7()
     {
-        SceneManager.LoadScene("Fase7");
+        if(fase7_Open){
+            SceneManager.LoadScene("Fase7");
+        }
+        
     }
     public void Fase8()
     {

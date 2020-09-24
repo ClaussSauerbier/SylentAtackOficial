@@ -5,11 +5,11 @@ using UnityEngine;
 public class Inimigo : MonoBehaviour
 {
     AudioSource som;
-    public AudioClip grito;
+    public AudioClip grito, arma;
     public bool robo;
     public GameObject fumacaFX;
     Animator animador;
-    private bool morto = false;
+    private bool morto = false, fire;
     public int dano;
     public LayerMask playerLayer;
     public float raio, raio2, velocidade;
@@ -27,6 +27,7 @@ public class Inimigo : MonoBehaviour
         pos = transform.position;
         animador = GetComponent<Animator>();
         som = GetComponent<AudioSource>();
+        fire = true;
     }
 
 
@@ -63,7 +64,7 @@ public class Inimigo : MonoBehaviour
         {
             Instantiate(fumacaFX, transform.position, transform.rotation);
         }
-        som.PlayOneShot(grito, 0.4f);
+        som.PlayOneShot(grito, 1f);
         morto = true;
         animador.SetBool("Fire", false);
         animador.SetBool("Run", false);
@@ -71,18 +72,33 @@ public class Inimigo : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = false;
         yield return new WaitForSeconds(4);
         Instantiate(explosao, transform.position, transform.rotation);
+        fire = true;
         Destroy(gameObject);
     }
     void Atacar()
     {
+        if(fire){
+            fire = false;
+            StartCoroutine("Atack");
+        }
+        
+    }
+    IEnumerator Atack(){
+        som.PlayOneShot(arma);
         animador.SetBool("Fire", true);
         animador.SetBool("Run", false);
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -transform.right, raio, playerLayer);
         if (hit.transform.GetComponent<Player>())
         {
             Player.vida -= 1 * dano;
+            if(Player.vida < 0){
+                 Player.vida = 0;
+                }
             hit.transform.GetComponent<Player>().Morto();
         }
+        
+        yield return new WaitForSeconds(0.1f);
+        fire = true;
     }
     void Parar()
     {

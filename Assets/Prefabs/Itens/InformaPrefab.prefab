@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info: "informa\xE7\xE3o"
-  som: {fileID: 8300000, guid: d63e69a1286a6e84dbd03b50e54469fb, type: 3}
+  som: {fileID: 8300000, guid: ac4a54d9d3d3f1546a7beb97e4069ed1, type: 3}
 --- !u!58 &5184049309261467729
 CircleCollider2D:
   m_ObjectHideFlags: 0

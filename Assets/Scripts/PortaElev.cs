@@ -13,13 +13,16 @@ public class PortaElev : MonoBehaviour
     public LayerMask layer;
 
     [Header("Digite level de (0 a 7)")]
-    public string level;
+    public int level;
     Animator animador;
+    AudioSource aud;
+    public AudioClip clipNEG, clipOpen;
 
     // Start is called before the first frame update
     void Start()
     {
         animador = GetComponent<Animator>();
+        aud = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,7 +34,7 @@ public class PortaElev : MonoBehaviour
             {
                 if (Player.estaComCartao)
                 {
-                    GetComponent<AudioSource>().Play();
+                    aud.PlayOneShot(clipOpen);
                     podeAction = true;
                     collision.GetComponent<InfoSCR>().MudaTexto("Entrar");
                     animador.SetBool("PortaAbre", true);
@@ -39,6 +42,7 @@ public class PortaElev : MonoBehaviour
                 else
                 {
                     collision.GetComponent<InfoSCR>().MudaTexto("Sem Cartao");
+                    aud.PlayOneShot(clipNEG);
                 }
             }
 
@@ -67,7 +71,7 @@ public class PortaElev : MonoBehaviour
             {
                 animador.SetBool("PortaAbre", false);
                 if(Player.estaComCartao){
-                    GetComponent<AudioSource>().Play();
+                    aud.PlayOneShot(clipOpen);
                 }
             }
         }
@@ -76,7 +80,28 @@ public class PortaElev : MonoBehaviour
     {
         if (podeAction && usarCard && Player.estaComCartao)
         {
-            SceneManager.LoadScene("Fase" + level);
+            if(level == 1){
+                MenuSCR.fase1_Open = true;
+            }
+            if(level == 2){
+                MenuSCR.fase2_Open = true;
+            }
+            if(level == 3){
+                MenuSCR.fase3_Open = true;
+            }
+            if(level == 4){
+                MenuSCR.fase4_Open = true;
+            }
+            if(level == 5){
+                MenuSCR.fase5_Open = true;
+            }
+            if(level == 6){
+                MenuSCR.fase6_Open = true;
+            }
+            if(level == 7){
+                MenuSCR.fase7_Open = true;
+            }
+            SceneManager.LoadScene("Fases");
         }
         if(podeAction && usarChave && Player.estaComChave)
         {

@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 56920263}
   - component: {fileID: 56920262}
   - component: {fileID: 56920261}
+  - component: {fileID: 56920264}
   m_Layer: 5
   m_Name: Fase3
   m_TagString: Untagged
@@ -314,7 +315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75e04cdf57f0836479d49a60f952ed89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -332,6 +333,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56920259}
   m_CullTransparentMesh: 0
+--- !u!114 &56920264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56920259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadbe58b1ecc82438b93b119ee95c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  fase: 3
 --- !u!1 &240566442
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +972,7 @@ GameObject:
   - component: {fileID: 543595103}
   - component: {fileID: 543595102}
   - component: {fileID: 543595101}
+  - component: {fileID: 543595104}
   m_Layer: 5
   m_Name: Fase7
   m_TagString: Untagged
@@ -1057,7 +1073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75e04cdf57f0836479d49a60f952ed89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1075,6 +1091,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543595099}
   m_CullTransparentMesh: 0
+--- !u!114 &543595104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543595099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadbe58b1ecc82438b93b119ee95c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  fase: 7
 --- !u!1 &560337318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1276,7 @@ GameObject:
   - component: {fileID: 618940186}
   - component: {fileID: 618940185}
   - component: {fileID: 618940184}
+  - component: {fileID: 618940187}
   m_Layer: 5
   m_Name: Fase5
   m_TagString: Untagged
@@ -1346,7 +1377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75e04cdf57f0836479d49a60f952ed89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1364,6 +1395,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618940182}
   m_CullTransparentMesh: 0
+--- !u!114 &618940187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618940182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadbe58b1ecc82438b93b119ee95c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  fase: 5
 --- !u!1 &663877962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,6 +1499,7 @@ GameObject:
   - component: {fileID: 722927677}
   - component: {fileID: 722927676}
   - component: {fileID: 722927675}
+  - component: {fileID: 722927678}
   m_Layer: 5
   m_Name: Fase1
   m_TagString: Untagged
@@ -1554,7 +1600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75e04cdf57f0836479d49a60f952ed89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1572,6 +1618,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722927673}
   m_CullTransparentMesh: 0
+--- !u!114 &722927678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722927673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadbe58b1ecc82438b93b119ee95c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  fase: 1
 --- !u!1 &774338272
 GameObject:
   m_ObjectHideFlags: 0
@@ -2116,6 +2176,7 @@ GameObject:
   - component: {fileID: 1263339935}
   - component: {fileID: 1263339934}
   - component: {fileID: 1263339933}
+  - component: {fileID: 1263339936}
   m_Layer: 5
   m_Name: Fase2
   m_TagString: Untagged
@@ -2216,7 +2277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75e04cdf57f0836479d49a60f952ed89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2234,6 +2295,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263339931}
   m_CullTransparentMesh: 0
+--- !u!114 &1263339936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263339931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadbe58b1ecc82438b93b119ee95c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  fase: 2
 --- !u!1 &1344182343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,7 +2378,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Refens
+  m_Text: "Vingan\xE7a"
 --- !u!222 &1344182346
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2324,6 +2399,7 @@ GameObject:
   - component: {fileID: 1348006944}
   - component: {fileID: 1348006943}
   - component: {fileID: 1348006942}
+  - component: {fileID: 1348006945}
   m_Layer: 5
   m_Name: Fase6
   m_TagString: Untagged
@@ -2424,7 +2500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75e04cdf57f0836479d49a60f952ed89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2442,6 +2518,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348006940}
   m_CullTransparentMesh: 0
+--- !u!114 &1348006945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348006940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadbe58b1ecc82438b93b119ee95c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  fase: 6
 --- !u!1 &1414231302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,6 +3297,7 @@ GameObject:
   - component: {fileID: 2080146813}
   - component: {fileID: 2080146812}
   - component: {fileID: 2080146811}
+  - component: {fileID: 2080146814}
   m_Layer: 5
   m_Name: Fase4
   m_TagString: Untagged
@@ -3307,7 +3398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75e04cdf57f0836479d49a60f952ed89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3325,6 +3416,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080146809}
   m_CullTransparentMesh: 0
+--- !u!114 &2080146814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080146809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aadbe58b1ecc82438b93b119ee95c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: c47f56dac3cbd774e8fe81655966aa52, type: 3}
+  fase: 4
 --- !u!1 &2113896303
 GameObject:
   m_ObjectHideFlags: 0

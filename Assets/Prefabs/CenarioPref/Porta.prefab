@@ -150,6 +150,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   level: 0
+  clipNEG: {fileID: 8300000, guid: 1e84bd41619dafc469584ed380c16c76, type: 3}
+  clipOpen: {fileID: 8300000, guid: e6cc322e0b7b50847989ad85afa31bcc, type: 3}
 --- !u!82 &-1064859930267562498
 AudioSource:
   m_ObjectHideFlags: 0
@@ -162,7 +164,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e6cc322e0b7b50847989ad85afa31bcc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.58
   m_Pitch: 3
   Loop: 0
   Mute: 0
