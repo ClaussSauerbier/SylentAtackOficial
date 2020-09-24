@@ -688,7 +688,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -750,6 +750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game: 1
   painel: {fileID: 8322944826355070705}
+  clickSom: {fileID: 0}
 --- !u!82 &2177872772042753229
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2605,6 +2606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info: 
+  som: {fileID: 0}
 --- !u!1 &5915095795229810471
 GameObject:
   m_ObjectHideFlags: 0

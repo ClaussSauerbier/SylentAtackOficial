@@ -9,6 +9,9 @@ TagManager:
   - Parede
   - Nulo
   - Info
+  - Plataforma
+  - Agua
+  - Plataforma2
   layers:
   - Default
   - TransparentFX

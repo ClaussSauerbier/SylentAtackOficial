@@ -23,7 +23,7 @@ public class Informa : MonoBehaviour
         {
             GetComponent<AudioSource>().PlayOneShot(som);
             collision.transform.GetComponent<InfoSCR>().Tutorial(info);
-            Destroy(gameObject, 0.1f);
+            Destroy(gameObject);
         }
     }
 

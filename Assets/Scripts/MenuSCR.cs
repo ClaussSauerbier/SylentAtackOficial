@@ -10,6 +10,8 @@ public class MenuSCR : MonoBehaviour
     private bool isPause;
     public static bool pauseStatic, fase1_Open, fase2_Open, fase3_Open, fase4_Open, fase5_Open, fase6_Open, fase7_Open;
     public GameObject painel;
+    AudioSource som;
+    public AudioClip clickSom;
 
 
     // Start is called before the first frame update
@@ -20,6 +22,7 @@ public class MenuSCR : MonoBehaviour
             painel.SetActive(false);
             Time.timeScale = 1;
         }
+        som = GetComponent<AudioSource>();
         
     }
 
@@ -74,49 +77,60 @@ public class MenuSCR : MonoBehaviour
     {
         if(fase1_Open){
         SceneManager.LoadScene("Fase1");
-        }
-        
+        }   else{
+                som.PlayOneShot(clickSom);
+        }   
     }
     public void Fase2()
     {
         if(fase2_Open){
             SceneManager.LoadScene("Fase2");
-        }
-        
+        }   else{
+                som.PlayOneShot(clickSom);
+        }   
     }
     public void Fase3()
     {
         if(fase3_Open){
             SceneManager.LoadScene("Fase3");
-        }
-        
+        }   else{
+                som.PlayOneShot(clickSom);
+        }   
     }
     public void Fase4()
     {
         if(fase4_Open){
             SceneManager.LoadScene("Fase4");
-        }
-        
+        }   else{
+            som.PlayOneShot(clickSom);
+        }   
     }
     public void Fase5()
     {
         if(fase5_Open){
             SceneManager.LoadScene("Fase5");
-        }
-        
+        }  
+        else{
+                som.PlayOneShot(clickSom);
+        }   
     }
     public void Fase6()
     {
         if(fase6_Open){
             SceneManager.LoadScene("Fase6");
         }
-        
+        else{
+                som.PlayOneShot(clickSom);
+        }   
     }
     public void Fase7()
-    {
+    { 
         if(fase7_Open){
             SceneManager.LoadScene("Fase7");
         }
+        else{
+            som.PlayOneShot(clickSom);
+        }   
         
     }
     public void Fase8()

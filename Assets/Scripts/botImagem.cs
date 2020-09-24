@@ -18,7 +18,7 @@ public class botImagem : MonoBehaviour
         if(MenuSCR.fase2_Open & fase == 2){
             rend.sprite = img;
         }
-        if(MenuSCR.fase2_Open & fase == 3){
+        if(MenuSCR.fase3_Open & fase == 3){
             rend.sprite = img;
         }
         if(MenuSCR.fase4_Open & fase == 4){

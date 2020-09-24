@@ -2935,6 +2935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game: 0
   painel: {fileID: 0}
+  clickSom: {fileID: 8300000, guid: 97536b215df294f468e9fedf3565e3c6, type: 3}
 --- !u!114 &1924540008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,7 +3037,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ea5a84d41f4a4f943b4d7e8641fd0ad8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.39
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3132,7 +3133,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 88b52aa92c6be7940a921848d82e3ed7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.64
   m_Pitch: 1
   Loop: 0
   Mute: 0

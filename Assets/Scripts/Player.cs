@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     public Transform estrelaPOS;
 
     AudioSource tocador;
-    public AudioClip ItemSOM, SaudeSOM, VidaSOM, checkPointSOM, explodeSOM, pulaSOM, mortoSOM, cardSom, keySom;
+    public AudioClip ItemSOM, SaudeSOM, VidaSOM, checkPointSOM, explodeSOM, pulaSOM, mortoSOM, cardSom, keySom, toqueChao, toqueChao2, toqueAgua;
     public static bool itemSTC, vidaSTC, saudeSTC, checkSTC, explodeSTC, cardSTC, keySTC;
 
     void Start()
@@ -224,6 +224,17 @@ public class Player : MonoBehaviour
             rb.AddForce(new Vector2(0, forcaPulo) , ForceMode2D.Impulse); 
             tocador.PlayOneShot(pulaSOM);
         } 
+    }
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.CompareTag("Plataforma")){
+            tocador.PlayOneShot(toqueChao, 0.2f);
+        }
+        if(other.CompareTag("Plataforma2")){
+            tocador.PlayOneShot(toqueChao2, 0.2f);
+        }
+        if(other.CompareTag("Agua")){
+            tocador.PlayOneShot(toqueAgua, 0.4f);
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {

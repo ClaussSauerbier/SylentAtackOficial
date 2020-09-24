@@ -11001,6 +11001,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4682034bc161b8e4f95ba49ddd08849b, type: 3}
+    - target: {fileID: 2177872772042753229, guid: 34fd2e1966f45594a8820c7fc442df9f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.57
+      objectReference: {fileID: 0}
     - target: {fileID: 3512167615367752411, guid: 34fd2e1966f45594a8820c7fc442df9f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -11036,6 +11041,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1048536999}
+    - target: {fileID: 4285267232712378269, guid: 34fd2e1966f45594a8820c7fc442df9f,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4285267232712378270, guid: 34fd2e1966f45594a8820c7fc442df9f,
         type: 3}
       propertyPath: m_LocalPosition.x
