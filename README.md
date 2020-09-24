@@ -13,6 +13,6 @@
 
 *Para jogar basta apenas baixar e instalar, permitir a instalação de arquivo desconhecido por estar fora da Playstore e jogar*
 
-*O aplicativo não contem nenhum arquivo malicioso e qualquer problema você pode estar entrando em contato conosco!*
+*O aplicativo não contem nenhum arquivo malicioso e qualquer problema  entre em contato conosoco! *
 
 ### Aproveite o jogo e Obrigado por contribuir com nosso trabalho! :D
