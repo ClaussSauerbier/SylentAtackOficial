@@ -23,7 +23,6 @@ public class MenuSCR : MonoBehaviour
             Time.timeScale = 1;
         }
         som = GetComponent<AudioSource>();
-        
     }
 
     // Update is called once per frame
@@ -56,7 +55,6 @@ public class MenuSCR : MonoBehaviour
 
     public void FaseMenu()
     {
-
         Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }
@@ -136,5 +134,54 @@ public class MenuSCR : MonoBehaviour
     public void Fase8()
     {
         SceneManager.LoadScene("Fase8");
+    }
+    void GetFases(){
+        if(PlayerPrefs.GetInt("Save1") == 1){
+            fase1_Open = true;
+        }
+        if(PlayerPrefs.GetInt("Save2") == 2){
+            fase2_Open = true;
+        }
+        if(PlayerPrefs.GetInt("Save3") == 3){
+            fase3_Open = true;
+        }
+        if(PlayerPrefs.GetInt("Save4") == 4){
+            fase4_Open = true;
+        }
+        if(PlayerPrefs.GetInt("Save5") == 5){
+            fase5_Open = true;
+        }
+        if(PlayerPrefs.GetInt("Save6") == 6){
+            fase6_Open = true;
+        }
+        if(PlayerPrefs.GetInt("Save7") == 7){
+            fase7_Open = true;
+        }
+    }
+
+    public void NewGame(){
+        PlayerPrefs.SetInt("Save1", 0);
+        PlayerPrefs.SetInt("Save2", 0);
+        PlayerPrefs.SetInt("Save3", 0);
+        PlayerPrefs.SetInt("Save4", 0);
+        PlayerPrefs.SetInt("Save5", 0);
+        PlayerPrefs.SetInt("Save6", 0);
+        PlayerPrefs.SetInt("Save7", 0);
+        fase1_Open = false;
+        fase2_Open = false;
+        fase3_Open = false;
+        fase4_Open = false;
+        fase5_Open = false;
+        fase6_Open = false;
+        fase7_Open = false;
+        LoadGame();
+    }
+
+    public void LoadGame(){
+        GetFases();
+        SceneManager.LoadScene("Fases");
+    }
+    public void SaveLoad(){
+        SceneManager.LoadScene("SaveLoad");
     }
 }

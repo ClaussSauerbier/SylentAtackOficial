@@ -915,7 +915,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1771320286}
-        m_MethodName: Fases
+        m_MethodName: SaveLoad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1730,6 +1730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game: 0
   painel: {fileID: 0}
+  clickSom: {fileID: 0}
 --- !u!82 &1771320287
 AudioSource:
   m_ObjectHideFlags: 0

@@ -82,26 +82,39 @@ public class PortaElev : MonoBehaviour
         {
             if(level == 1){
                 MenuSCR.fase1_Open = true;
+                PlayerPrefs.SetInt("Save1", 1);
             }
             if(level == 2){
                 MenuSCR.fase2_Open = true;
+                PlayerPrefs.SetInt("Save2", 2);
             }
             if(level == 3){
                 MenuSCR.fase3_Open = true;
+                PlayerPrefs.SetInt("Save3", 3);
             }
             if(level == 4){
                 MenuSCR.fase4_Open = true;
+                PlayerPrefs.SetInt("Save4", 4);
             }
             if(level == 5){
                 MenuSCR.fase5_Open = true;
+                PlayerPrefs.SetInt("Save5", 5);
             }
             if(level == 6){
                 MenuSCR.fase6_Open = true;
+                PlayerPrefs.SetInt("Save6", 6);
             }
             if(level == 7){
                 MenuSCR.fase7_Open = true;
+                PlayerPrefs.SetInt("Save7", 7);
             }
-            SceneManager.LoadScene("Fases");
+            if(level == 8){
+                SceneManager.LoadScene("Fase8");
+            }
+            if(level != 8){
+                SceneManager.LoadScene("Fases");
+            }
+            
         }
         if(podeAction && usarChave && Player.estaComChave)
         {

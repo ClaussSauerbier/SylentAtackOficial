@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
     {
         vidaTxt.text = "" + vida;
         Instantiate(sangue, transform.position, transform.rotation);
-        if (vida <= 0)
+        if (vida <= 0 && !morto)
         {
             podeMover = false;
             morto = true;

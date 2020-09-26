@@ -199,13 +199,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e674bd9d3478a504faa8ed16e48daa72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raio: 5
+  raio: 3
   usarChave: 1
   usarCard: 0
   layer:
     serializedVersion: 2
     m_Bits: 2048
-  level: 
+  level: 0
   clipNEG: {fileID: 0}
   clipOpen: {fileID: 0}
 --- !u!61 &2437662019304911295
